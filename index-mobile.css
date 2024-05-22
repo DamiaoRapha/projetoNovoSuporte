@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@media (max-width: 768px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    html, body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to top,#f5ca85,#FFA726, #FB8C00, #EF6C00);
+    }
+
+        div#container {
+            width: 300px;
+            height: 600px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+            color: #EF6C00;
+        }
+
+            div#imgLogin {
+                width: 300px;
+                height: 200px;
+                background-image: url(Imagens/imgLogin1.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                border-radius: 10px 10px 0px 0px;
+            }
+
+            div#login {
+                width: 300px;
+                height: 400px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 0px 0px 10px 10px;           
+            }
+
+                div#login h1 {
+                    text-align: center;
+                    font-size: 40px;
+                    padding: 30px 30px 0px 30px;
+                    font-family: "Freeman", sans-serif;
+                }
+
+                div#login h2 {
+                    text-align: center;
+                    font-size: 17px;
+                    padding: 10px;
+                    color: black;
+                }
+
+            
+
+                div#login p {
+                    text-align: center;
+                    padding: 10px;
+                }
+
+                div#login input#btn, a#forgotPassword {
+                    text-align: center;
+                    padding: 5px;
+                    margin: 10px;
+                    box-shadow: 0px 0px 2px black;
+                    background-color: #EF6C00;
+                    border-radius: 7px;
+                    border: none;
+                    color: white;
+                    cursor: pointer;
+                }
+
+                div#login input.campoLogin {
+                    padding: 5px;
+                    color: white;
+                    background-color: #EF6C00;
+                    border-radius: 7px;
+                    border: none;
+                    transform: translateY(-6px);
+                }
+
+                div#login span#mailIcon {
+                    padding: 5px;
+                    transform: translateY(6px);
+                }
+
+                div#login a#forgotPassword {
+                    text-decoration: none;
+                    color: white;
+                }
+
+                div#login p#paddingBtnZero {
+                    padding: 0px;
+                }
+
+                    div#emailField input.recoverPassword {
+                        padding: 5px;
+                        margin-top: 10px;
+                        color: #EF6C00;
+                        background-color: white;
+                        border-radius: 7px;
+                        border-color: #EF6C00;
+                    }
+    
+            
+    
+                        div#emailField p#paddingZero1 {
+                            margin-top: -10px;
+                            
+                        }
+
+                        div#emailField p#paddingZero2 {
+                            margin-top: -20px;
+                        }
+                
+                        div#emailField input#recoverPassword {
+                            text-align: center;
+                            padding: 5px;
+                            margin-top: 10px;
+                            box-shadow: 0px 0px 2px black;
+                            background-color: #EF6C00;
+                            border-radius: 7px;
+                            border: none;
+                            color: white;
+                            cursor: pointer;
+                        }
+}
