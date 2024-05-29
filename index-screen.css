@@ -80,6 +80,24 @@
                     cursor: pointer;
                 }
 
+                div#login input#btn:hover {
+                    border-style: solid;
+                    border: 1px solid #EF6C00;
+                    background-color: white;
+                    font-weight: bold;
+                    color: #EF6C00;
+                    cursor: pointer;
+                }
+
+                div#login a#forgotPassword:hover {
+                    border-style: solid;
+                    border: 1px solid #EF6C00;
+                    background-color: white;
+                    font-weight: bold;
+                    color: #EF6C00;
+                    cursor: pointer;
+                }
+
                 div#login input.campoLogin {
                     padding: 5px;
                     color: white;
