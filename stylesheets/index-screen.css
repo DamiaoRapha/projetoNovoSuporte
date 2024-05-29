@@ -28,7 +28,7 @@
             div#imgLogin {
                 width: 350px;
                 height: 350px;
-                background-image: url(Imagens/imgLogin1.png);
+                background-image: url(../Imagens/imgLogin1.png);
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
