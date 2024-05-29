@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) { 
     * {
         margin: 0px;
         padding: 0px;
@@ -16,8 +16,8 @@
     }
 
         div#container {
-            width: 900px;
-            height: 350px;
+            width: 700px;
+            height: 250px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px black;
             color: #EF6C00;
@@ -26,8 +26,8 @@
         }
 
             div#imgLogin {
-                width: 350px;
-                height: 350px;
+                width: 300px;
+                height: 250px;
                 background-image: url(Imagens/imgLogin1.png);
                 background-repeat: no-repeat;
                 background-position: center center;
@@ -36,17 +36,17 @@
             }
 
             div#login {
-                width: 550px;
-                height: 350px;
+                width: 600px;
+                height: 250px;
                 background-color: rgb(255, 255, 255);
                 border-radius: 0px 10px 10px 0px;           
             }
-
                 div#login h1 {
                     text-align: center;
                     font-size: 40px;
-                    padding: 30px 30px 0px 30px;
+                    padding: 0px 30px;
                     font-family: "Freeman", sans-serif;
+                    margin: 0px;
                 }
 
                 div#login h2 {
