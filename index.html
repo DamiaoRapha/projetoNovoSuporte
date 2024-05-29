@@ -43,17 +43,22 @@
                     </a> 
                     <input id="btn" type="submit" value="Login">
                 </p>
-                <!-- A div abaixo só aparece quando o usuário clica em "Esqueci a senha" -->
-                <div id="emailField">
-                    <p style="color:black" id="paddingZero1">Digite seu e-mail no campo abaixo e clique em recuperar senha.</p>
-                    <p id="paddingZero2">
-                        <label for="idEmail">
-                            <input id="recoverPassword" type="button" value="Recuperar Senha">
-                        </label>
-                        <input class="recoverPassword" type="email" name="email" id="idEmail" placeholder="Digite seu e-mail" required>
-                    </p>
-                </div>
             </form>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal">
+        <div id="modalContent">
+            <span class="close">&times;</span>
+            <h2>Recuperar Senha</h2>
+            <p>Digite seu e-mail no campo abaixo e clique em recuperar senha.</p>
+            <p>
+                <input class="recoverPassword" type="email" name="email" id="idEmail" required autocomplete="off">
+            </p>
+            <p>
+                <input id="recoverPassword" type="button" value="Recuperar Senha">
+            </p>
         </div>
     </div>
 
@@ -61,13 +66,19 @@
         // Função para lidar com o clique no link "Esqueci a senha"
         document.getElementById('forgotPassword').addEventListener('click', function(event) {
             event.preventDefault(); // Evita o comportamento padrão do link
+            document.getElementById('myModal').style.display = "block";
+        });
 
-            // Mostra ou oculta o campo de email dependendo do seu estado atual
-            var emailField = document.getElementById('emailField');
-            if (emailField.style.display === 'none') {
-                emailField.style.display = 'block';
-            } else {
-                emailField.style.display = 'none';
+        // Função para fechar o modal
+        document.getElementsByClassName('close')[0].addEventListener('click', function() {
+            document.getElementById('myModal').style.display = "none";
+        });
+
+        // Fechar o modal ao clicar fora dele
+        window.addEventListener('click', function(event) {
+            var modal = document.getElementById('myModal');
+            if (event.target === modal) {
+                modal.style.display = "none";
             }
         });
     </script>
